@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adham Abdo — Data Analyst & Business Intelligence Specialist. Power BI, SQL, Python, Tableau. 170+ projects delivered.">
+  <title>Adham Abdo — Data Analyst & BI Specialist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="progress"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="#">
+    <div class="logo-dot"></div>
+    Adham Abdo
+  </a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-right">
+    <button class="btn-theme" id="themeBtn" aria-label="Toggle theme">☀️</button>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/cdn-cgi/l/email-protection#3d5c59555c505c5f5958514a5c595248597d5a505c5451135e5250" class="btn-hire">Hire Me</a>
+  </div>
+</nav>
+
+<!-- Mobile nav drawer -->
+<div class="nav-drawer" id="navDrawer">
+  <a href="#about"      onclick="closeDrawer()">About</a>
+  <a href="#skills"     onclick="closeDrawer()">Skills</a>
+  <a href="#experience" onclick="closeDrawer()">Experience</a>
+  <a href="#projects"   onclick="closeDrawer()">Projects</a>
+  <a href="#services"   onclick="closeDrawer()">Services</a>
+  <a href="#contact"    onclick="closeDrawer()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-tag fade">
+          <span class="hero-tag-pulse"></span>
+          Available for projects
+        </div>
+        <h1 class="hero-title fade d1">
+          Transforming<br>
+          <span class="c1">Data</span> Into<br>
+          Strategic <span class="c2">Insights</span>
+        </h1>
+        <p class="hero-sub fade d2">
+          Data Analyst &amp; Power BI Developer with 3+ years experience.
+          170+ projects delivered across finance, healthcare, government &amp; HR.
+        </p>
+        <div class="hero-btns fade d2">
+          <a href="#projects" class="btn-primary">View Projects &rarr;</a>
+          <a href="#contact" class="btn-outline">Let&rsquo;s Talk</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap fade d2">
+          <div class="hero-photo">
+            <img src="assets/images/adham-photo2.jpg" alt="Adham Abdo — Data Analyst" loading="eager">
+          </div>
+        <div class="hero-photo-wrap fade d2">
+
+          <!-- Power BI Badge -->
+          <div class="hero-badge">
+            <div class="hb-icon">
+              <img src="assets/images/Microsoft-Power-BI-Logo.png" alt="Power BI" width="50" height="30">
+            </div>
+            <div>
+              <div class="hb-num">Power BI</div>
+              <div class="hb-lbl">Expert Level</div>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="sec sec-alt">
+  <div class="container">
+    <div class="sec-tag fade">About Me</div>
+    <h2 class="sec-title fade d1">Data-Driven <em>Storyteller</em></h2>
+    <div class="about-grid">
+      <div class="about-photo fade">
+        <img src="assets/images/adham-photo4.png" alt="Adham Abdo" loading="lazy">
+      </div>
+      <div class="fade d1">
+        <p>I&rsquo;m Adham Abdo, a Data Analyst and Power BI Developer based in Sharkia, Egypt. With 3+ years of experience, I transform complex raw data into compelling visual narratives that drive strategic business decisions.</p>
+        <p>From freelancing on Fiverr &amp; Khamsat to working as a BI Specialist at Exology and coaching 50+ students at EYouth — I bring both technical depth and real-world business context to every engagement.</p>
+        <div class="chips">
+          <span class="chip">Power BI</span><span class="chip">SQL</span><span class="chip">Python</span>
+          <span class="chip">Tableau</span><span class="chip">Looker</span><span class="chip">ETL</span>
+          <span class="chip">Data Modeling</span><span class="chip">Machine Learning</span>
+          <span class="chip">Data Storytelling</span><span class="chip">DAX</span>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/adham-abdo/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">in</a>
+          <a href="https://github.com/AdhamAbdo" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">&#xe79b;</a>
+          <a href="/cdn-cgi/l/email-protection#5a3b3e323b373b383e3f362d3b3e352f3e1a3d373b333674393537" class="social-btn" aria-label="Email">&#9993;</a>
+          <a href="https://adhamanalyst.com" target="_blank" rel="noopener" class="social-btn" aria-label="Website">&#9674;</a>
+        </div>
+      </div>
+    </div>
+    <div class="stats-row">
+      <div class="stat-card fade"><span class="stat-num counter" data-target="200">0</span><span class="stat-lbl">Happy Clients</span></div>
+      <div class="stat-card fade d1"><span class="stat-num counter" data-target="170">0</span><span class="stat-lbl">Projects Completed</span></div>
+      <div class="stat-card fade d2"><span class="stat-num counter" data-target="3">0</span><span class="stat-lbl">Years Experience</span></div>
+      <div class="stat-card fade d3"><span class="stat-num counter" data-target="35">0</span><span class="stat-lbl">Courses Completed</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="sec">
+  <div class="container">
+    <div class="sec-tag fade">Technical Skills</div>
+    <h2 class="sec-title fade d1">Tools &amp; <em>Expertise</em></h2>
+    <div class="skills-grid">
+      <div class="skill-list fade">
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Power BI</span><span class="skill-pct">95%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill sf-cyan" data-w="95"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">SQL</span><span class="skill-pct">90%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill sf-cyan" data-w="90"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Python</span><span class="skill-pct">85%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill sf-purple" data-w="85"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Tableau</span><span class="skill-pct">88%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill sf-purple" data-w="88"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Machine Learning</span><span class="skill-pct">78%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill sf-green" data-w="78"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Excel / Google Sheets</span><span
+              class="skill-pct">95%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill sf-green" data-w="95"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Looker / Looker Studio</span><span
+              class="skill-pct">82%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill sf-amber" data-w="82"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">ETL &amp; Data Modeling</span><span
+              class="skill-pct">87%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill sf-amber" data-w="87"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-list fade d1">
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span class="skill-name">DAX</span><span class="skill-pct">92%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill sf-cyan" data-w="92"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span class="skill-name">Power Query (M)</span><span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill sf-cyan" data-w="90"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span class="skill-name">Data Modeling</span><span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill sf-purple" data-w="88"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span class="skill-name">ETL Pipelines</span><span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill sf-purple" data-w="85"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span class="skill-name">Statistics</span><span class="skill-pct">82%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill sf-green" data-w="82"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span class="skill-name">Data Visualization</span><span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill sf-green" data-w="90"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span class="skill-name">BigQuery</span><span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill sf-amber" data-w="80"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-meta">
+            <span class="skill-name">Data Storytelling</span><span class="skill-pct">87%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill sf-amber" data-w="87"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="sec sec-alt">
+  <div class="container">
+    <div class="sec-tag fade">Work History</div>
+    <h2 class="sec-title fade d1">Professional <em>Journey</em></h2>
+
+    <div class="timeline fade d1">
+
+      <!-- Data Analytics Coach -->
+      <div class="tl-item">
+        <div class="tl-row">
+          <div class="tl-role">Data Analytics Coach</div>
+          <div class="tl-date">Oct 2024 – Dec 2024</div>
+        </div>
+        <div class="tl-co">EYouth</div>
+        <ul class="tl-pts">
+          <li>Collaborated with clients across industries, mentoring <b>50+ students</b> in Power BI, Tableau, Looker, Python, and Excel.</li>
+          <li>Guided students in <b>UI/UX, data storytelling, and presentation design</b> to enhance communication skills.</li>
+          <li>Provided career coaching on <b>CV writing, job applications, and LinkedIn optimization</b>.</li>
+          <li>Taught students how to <b>think as analysts</b> and approach data systematically.</li>
+          <li>Supported students in developing <b>project pipelines and advanced analytics workflows</b>.</li>
+        </ul>
+      </div>
+
+      <!-- Business Intelligence Specialist -->
+      <div class="tl-item">
+        <div class="tl-row">
+          <div class="tl-role">Business Intelligence Specialist</div>
+          <div class="tl-date">Aug 2024 – Nov 2024</div>
+        </div>
+        <div class="tl-co">Exology</div>
+        <ul class="tl-pts">
+          <li>Analyzed and modeled complex datasets using <b>Power BI, Tableau, Looker, and Excel</b>.</li>
+          <li>Designed <b>interactive dashboards and UI/UX interfaces</b> for business reporting.</li>
+          <li>Performed <b>SQL data extraction, transformation, and analysis</b> for decision support.</li>
+          <li>Worked directly with clients to translate business needs into <b>data-driven solutions</b>.</li>
+          <li>Implemented modern <b>BI tools and analytics practices</b> to enhance reporting processes.</li>
+        </ul>
+      </div>
+
+      <!-- Freelance Data Analyst -->
+      <div class="tl-item">
+        <div class="tl-row">
+          <div class="tl-role">Freelance Data Analyst & Power BI Developer</div>
+          <div class="tl-date">2022 – Present</div>
+        </div>
+        <div class="tl-co">Fiverr & Khamsat</div>
+        <ul class="tl-pts">
+          <li>Delivered <b>170+ client projects</b> across marketing, finance, healthcare, and HR industries.</li>
+          <li>Designed and developed dashboards using <b>Power BI and Tableau</b>.</li>
+          <li>Performed <b>data cleaning, transformation, and analysis</b> for improved accuracy.</li>
+          <li>Implemented <b>machine learning models</b> to uncover trends and predictive insights.</li>
+          <li>Provided strategic recommendations to improve <b>business performance</b>.</li>
+        </ul>
+      </div>
+
+      <!-- Internship Section -->
+      <div class="tl-subtitle">Internships</div>
+
+      <!-- Intern Data Analyst -->
+      <div class="tl-item">
+        <div class="tl-row">
+          <div class="tl-role">Intern Data Analyst</div>
+          <div class="tl-date">Sep 2023 – Oct 2023</div>
+        </div>
+        <div class="tl-co">MeriSKILL</div>
+        <ul class="tl-pts">
+          <li>Assisted in building <b>data models and reports</b> for internal projects.</li>
+          <li>Analyzed large datasets to identify <b>trends and optimization opportunities</b>.</li>
+          <li>Improved <b>data processing workflows</b> for better efficiency.</li>
+        </ul>
+      </div>
+
+      <!-- PwC Internship -->
+      <div class="tl-item">
+        <div class="tl-row">
+          <div class="tl-role">Power BI Developer (Virtual Internship)</div>
+          <div class="tl-date">Oct 2024 – Dec 2024</div>
+        </div>
+        <div class="tl-co">PwC</div>
+        <ul class="tl-pts">
+          <li>Built Power BI dashboards visualizing <b>customer churn and retention metrics</b>.</li>
+          <li>Created interactive reports to support <b>data-driven decision making</b>.</li>
+          <li>Applied <b>DAX and data modeling</b> to improve business insights.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="sec">
+  <div class="container">
+    <div class="sec-tag fade">Portfolio</div>
+    <h2 class="sec-title fade d1">Featured <em>Projects</em></h2>
+    <div class="filter-bar fade d1">
+      <button class="filter-btn on" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="powerbi">Power BI</button>
+      <button class="filter-btn" data-cat="python">Python</button>
+      <button class="filter-btn" data-cat="sql">SQL</button>
+    </div>
+    <div class="proj-grid">
+
+      <div class="proj-card fade" data-cat="powerbi sql" data-idx="0">
+        <div class="proj-img"><img src="assets/images/army_project.png" alt="Army Sales Dashboard" loading="lazy"><div class="proj-img-overlay"><button class="overlay-cta">View Case Study &rarr;</button></div></div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">DAX</span><span class="proj-tag">Supply Chain</span></div>
+          <div class="proj-title">Army Sales Orders &amp; Item Demand Analysis</div>
+          <div class="proj-desc">$24bn in sales analyzed. Identified a 137% fulfillment gap between ordered vs. shipped quantities across government centers.</div>
+        </div>
+        <div class="proj-foot"><span class="proj-industry">Defense / Government</span><button class="proj-arrow">&#8599;</button></div>
+      </div>
+
+      <div class="proj-card fade d1" data-cat="powerbi" data-idx="1">
+        <div class="proj-img"><img src="assets/images/HR_Project.png" alt="Labor Market Dashboard" loading="lazy"><div class="proj-img-overlay"><button class="overlay-cta">View Case Study &rarr;</button></div></div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">Geospatial</span></div>
+          <div class="proj-title">Labor Market Data 2021–2024</div>
+          <div class="proj-desc">188.4M workforce records analyzed to monitor Saudization and sector-specific demographics for Vision 2030.</div>
+        </div>
+        <div class="proj-foot"><span class="proj-industry">Government / HR</span><button class="proj-arrow">&#8599;</button></div>
+      </div>
+
+      <div class="proj-card fade d2" data-cat="powerbi python" data-idx="2">
+        <div class="proj-img"><img src="assets/images/HR.png" alt="HR Attrition Dashboard" loading="lazy"><div class="proj-img-overlay"><button class="overlay-cta">View Case Study &rarr;</button></div></div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">DAX</span><span class="proj-tag">People Analytics</span></div>
+          <div class="proj-title">HR Employee Attrition Analytics</div>
+          <div class="proj-desc">Identified 47.3% attrition risk within the 20-34 age group and correlated management tenure with turnover trends.</div>
+        </div>
+        <div class="proj-foot"><span class="proj-industry">HR Analytics</span><button class="proj-arrow">&#8599;</button></div>
+      </div>
+
+      <div class="proj-card fade" data-cat="powerbi" data-idx="3">
+        <div class="proj-img"><img src="assets/images/item_tracker_project.png" alt="Supply Tracking Tool" loading="lazy"><div class="proj-img-overlay"><button class="overlay-cta">View Case Study &rarr;</button></div></div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">Logistics</span><span class="proj-tag">KPIs</span></div>
+          <div class="proj-title">STAT — Supply Tracking &amp; Analytics Tool</div>
+          <div class="proj-desc">Health-scoring for 52K+ items. Flagged 5,153 at-risk items for immediate procurement intervention.</div>
+        </div>
+        <div class="proj-foot"><span class="proj-industry">Defense Supply Chain</span><button class="proj-arrow">&#8599;</button></div>
+      </div>
+
+      <div class="proj-card fade d1" data-cat="powerbi" data-idx="4">
+        <div class="proj-img"><img src="assets/images/Call_Center.png" alt="Call Center Dashboard" loading="lazy"><div class="proj-img-overlay"><button class="overlay-cta">View Case Study &rarr;</button></div></div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">Operations</span><span class="proj-tag">PwC</span></div>
+          <div class="proj-title">Call Center Trends Dashboard — PwC</div>
+          <div class="proj-desc">81.1% answer rate across 5,000 calls. Mapped resolution gaps in technical support vs. streaming topics.</div>
+        </div>
+        <div class="proj-foot"><span class="proj-industry">Operations</span><button class="proj-arrow">&#8599;</button></div>
+      </div>
+
+      <div class="proj-card fade d2" data-cat="powerbi sql python" data-idx="5">
+        <div class="proj-img"><img src="assets/images/linked_in.png" alt="LinkedIn Jobs Analysis" loading="lazy"><div class="proj-img-overlay"><button class="overlay-cta">View Case Study &rarr;</button></div></div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">Python</span><span class="proj-tag">Market Research</span></div>
+          <div class="proj-title">LinkedIn Jobs Market Analysis</div>
+          <div class="proj-desc">16K jobs and 1M views analyzed. Discovered that only 19.72% of views convert to job applications.</div>
+        </div>
+        <div class="proj-foot"><span class="proj-industry">Market Research</span><button class="proj-arrow">&#8599;</button></div>
+      </div>
+
+      <div class="proj-card fade" data-cat="powerbi" data-idx="6">
+        <div class="proj-img"><img src="assets/images/TDF.png" alt="Tour de France Dashboard" loading="lazy"><div class="proj-img-overlay"><button class="overlay-cta">View Case Study &rarr;</button></div></div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">Sports Viz</span></div>
+          <div class="proj-title">Tour de France Historical Stages</div>
+          <div class="proj-desc">109 years of racing data. Visualizing 1,607 stages and the evolution of average speeds from 1903–2022.</div>
+        </div>
+        <div class="proj-foot"><span class="proj-industry">Sports Analytics</span><button class="proj-arrow">&#8599;</button></div>
+      </div>
+
+      <div class="proj-card fade d1" data-cat="powerbi" data-idx="7">
+        <div class="proj-img"><img src="assets/images/electric.png" alt="National Grid Dashboard" loading="lazy"><div class="proj-img-overlay"><button class="overlay-cta">View Case Study &rarr;</button></div></div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">Utility</span><span class="proj-tag">SCADA</span></div>
+          <div class="proj-title">National Grid SA — SCADA Work Orders</div>
+          <div class="proj-desc">Operational tracking of 439 work orders. Identified a 50% data quality gap in asset record completion.</div>
+        </div>
+        <div class="proj-foot"><span class="proj-industry">Energy / Utilities</span><button class="proj-arrow">&#8599;</button></div>
+      </div>
+
+      <div class="proj-card fade d2" data-cat="powerbi" data-idx="8">
+        <div class="proj-img"><img src="assets/images/Recilcling.png" alt="Recycling Dashboard" loading="lazy"><div class="proj-img-overlay"><button class="overlay-cta">View Case Study &rarr;</button></div></div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="proj-tag">Power BI</span><span class="proj-tag">Finance</span><span class="proj-tag">Arabic Support</span></div>
+          <div class="proj-title">Jeddah Municipality — Recycling Revenue</div>
+          <div class="proj-desc">2.73M SAR return tracked from 9,091 tons of waste across 3 contractors with monthly revenue peaks.</div>
+        </div>
+        <div class="proj-foot"><span class="proj-industry">Government / Environment</span><button class="proj-arrow">&#8599;</button></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="sec sec-alt">
+  <div class="container">
+    <div class="sec-tag fade">What I Offer</div>
+    <h2 class="sec-title fade d1">Services &amp; <em>Solutions</em></h2>
+    <div class="svc-grid">
+      <div class="svc-card fade"><div class="svc-icon">📊</div><div class="svc-title">Interactive Dashboard Development</div><div class="svc-desc">Enterprise-grade Power BI, Tableau, and Looker dashboards that turn KPIs into real-time decision engines.</div></div>
+      <div class="svc-card fade d1"><div class="svc-icon">🎓</div><div class="svc-title">Power BI Training &amp; Consultation</div><div class="svc-desc">One-on-one coaching and team workshops covering DAX, data modeling, and visual storytelling best practices.</div></div>
+      <div class="svc-card fade d2"><div class="svc-icon">🔮</div><div class="svc-title">Predictive Analytics &amp; Forecasting</div><div class="svc-desc">Machine learning models and statistical forecasting to anticipate trends and give your business a forward edge.</div></div>
+      <div class="svc-card fade"><div class="svc-icon">⚙️</div><div class="svc-title">Data Modeling &amp; ETL Pipelines</div><div class="svc-desc">Robust star schema modeling, Power Query transformations, and automated data refresh pipelines at scale.</div></div>
+      <div class="svc-card fade d1"><div class="svc-icon">🔒</div><div class="svc-title">Data Security &amp; Compliance</div><div class="svc-desc">Row-level security, data governance frameworks, and GDPR-compliant reporting architectures.</div></div>
+      <div class="svc-card fade d2"><div class="svc-icon">📋</div><div class="svc-title">Custom Reporting Solutions</div><div class="svc-desc">Tailored automated reports for executives and operations teams — delivered on schedule, every time.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="sec">
+  <div class="container">
+    <div class="sec-tag fade">Client Reviews</div>
+    <h2 class="sec-title fade d1">What Clients <em>Say</em></h2>
+    <div class="testi-wrap fade d1">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="testi-quote">I&rsquo;m absolutely delighted with the experience working with Adham Abdo! He exceeded my expectations with his exceptional data visualization service. The dashboards transformed how our entire leadership team makes decisions.</div>
+          <div class="testi-author"><div class="author-ava">KS</div><div><div class="author-name">Khalid S.</div><div class="author-loc">CEO &middot; Saudi Arabia &#x1F1F8;&#x1F1E6;</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">Exceptional service! Adham provided outstanding database management and Power BI solutions. His ability to understand our complex HR data and turn it into clear visual insights was remarkable.</div>
+          <div class="testi-author"><div class="author-ava">MA</div><div><div class="author-name">Mohammed A.</div><div class="author-loc">HR Director &middot; UAE &#x1F1E6;&#x1F1EA;</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">Adham&rsquo;s work on our financial analytics dashboard was brilliant. Fast delivery, clean design, and the insights he surfaced directly contributed to a 28% improvement in our quarterly decision cycle.</div>
+          <div class="testi-author"><div class="author-ava">LC</div><div><div class="author-name">Laura C.</div><div class="author-loc">CFO &middot; United States &#x1F1FA;&#x1F1F8;</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">Working with Adham was a game changer for our supply chain visibility. He built a tracking system from scratch that gave us real-time stock health across 52,000+ items. Absolutely top-tier analyst.</div>
+          <div class="testi-author"><div class="author-ava">YA</div><div><div class="author-name">Yousef A.</div><div class="author-loc">Operations Lead &middot; Kuwait &#x1F1F0;&#x1F1FC;</div></div></div>
+        </div>
+      </div>
+      <div class="slider-ctrl">
+        <button class="sl-btn" id="slPrev" aria-label="Previous">&larr;</button>
+        <button class="sl-btn" id="slNext" aria-label="Next">&rarr;</button>
+        <div class="sl-dots">
+          <div class="sl-dot on"></div><div class="sl-dot"></div><div class="sl-dot"></div><div class="sl-dot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="sec sec-alt">
+  <div class="container">
+    <div class="sec-tag fade">Get In Touch</div>
+    <h2 class="sec-title fade d1">Let&rsquo;s Work <em>Together</em></h2>
+    <div class="contact-grid">
+      <div class="fade">
+        <div class="contact-item"><div class="contact-icon">📧</div><div><div class="ci-label">Email</div><div class="ci-val"><a href="/cdn-cgi/l/email-protection#5332373b323e323137363f2432373c263713343e323a3f7d303c3e"><span class="__cf_email__" data-cfemail="8eefeae6efe3efeceaebe2f9efeae1fbeacee9e3efe7e2a0ede1e3">[email&#160;protected]</span></a></div></div></div>
+        <div class="contact-item"><div class="contact-icon">📱</div><div><div class="ci-label">Phone / WhatsApp</div><div class="ci-val">+201119690838</div></div></div>
+        <div class="contact-item"><div class="contact-icon">📍</div><div><div class="ci-label">Location</div><div class="ci-val">Sharkia, Egypt &#x1F1EA;&#x1F1EC;</div></div></div>
+        <div class="contact-item"><div class="contact-icon">🌐</div><div><div class="ci-label">Website</div><div class="ci-val"><a href="https://adhamanalyst.com" target="_blank" rel="noopener">adhamanalyst.com</a></div></div></div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/adham-abdo/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">in</a>
+          <a href="https://github.com/AdhamAbdo" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">&#9014;</a>
+        </div>
+      </div>
+      <div class="fade d1">
+        <form class="form" onsubmit="return false;">
+          <div class="form-row">
+            <div class="fg"><label for="fname">Your Name</label><input type="text" id="fname" placeholder="John Smith" autocomplete="name"></div>
+            <div class="fg"><label for="femail">Email Address</label><input type="email" id="femail" placeholder="john@company.com" autocomplete="email"></div>
+          </div>
+          <div class="fg"><label for="ftype">Project Type</label><input type="text" id="ftype" placeholder="Power BI Dashboard / Python Analysis / Training..."></div>
+          <div class="fg"><label for="fmsg">Message</label><textarea id="fmsg" placeholder="Tell me about your data challenge..."></textarea></div>
+          <button type="submit" class="btn-send">Send Message &#x2708;</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-name">Adham Abdo</div>
+  <div class="footer-links">
+    <a href="#about">About</a><a href="#projects">Projects</a><a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.linkedin.com/in/adham-abdo/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/AdhamAbdo" target="_blank" rel="noopener">GitHub</a>
+  </div>
+  <div class="footer-copy">&copy; 2025 Adham Abdo &middot; Data Analyst &amp; BI Specialist &middot; Sharkia, Egypt</div>
+</footer>
+
+<!-- MODAL — Case Study overlay -->
+<div class="modal-bg" id="modalBg" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <div class="modal-head">
+      <h2 id="modalTitle">Case Study</h2>
+      <button class="modal-close" id="modalClose" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+ 
+<script src="script.js"></script>
+</body>
+</html>
