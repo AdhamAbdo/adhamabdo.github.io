@@ -103,6 +103,11 @@ if (skillSection) {
 const filterBtns = document.querySelectorAll('.filter-btn');
 const projCards  = document.querySelectorAll('.proj-card');
 
+const projectImages = [...projCards].map(card => {
+  const img = card.querySelector('img');
+  return img ? img.getAttribute('src') : '';
+});
+
 filterBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     filterBtns.forEach(b => b.classList.remove('on'));
@@ -335,32 +340,56 @@ const modalBody  = document.getElementById('modalBody');
 function openModal(idx) {
   const p = projects[idx];
   if (!p) return;
+
+  const projectImage = projectImages[idx] || '';
+
   modalTitle.textContent = p.title;
+
   modalBody.innerHTML = `
+    ${projectImage ? `
+      <div class="cs-hero-img">
+        <img src="${projectImage}" alt="${p.title}">
+      </div>
+    ` : ''}
+
     <div class="cs-section">
       <h3>🎯 Problem Statement <span class="cs-sub">/ BUSINESS CHALLENGE</span></h3>
       <p>${p.problem}</p>
     </div>
+
     <div class="cs-section">
       <h3>📁 Data Overview <span class="cs-sub">/ DATASET</span></h3>
       <p>${p.data}</p>
     </div>
+
     <div class="cs-section">
       <h3>⚙️ Process <span class="cs-sub">/ HOW IT WAS BUILT</span></h3>
       <p>${p.process}</p>
     </div>
+
     <div class="cs-section">
       <h3>💡 Key Insights <span class="cs-sub">/ FINDINGS</span></h3>
       <p>${p.insights}</p>
     </div>
+
     <div class="cs-section">
       <h3>📈 Business Impact <span class="cs-sub">/ RESULTS</span></h3>
+
       <div class="impact-row">
-        ${p.impact.map(i => `<div class="impact-card"><div class="impact-val">${i.val}</div><div class="impact-lbl">${i.lbl}</div></div>`).join('')}
+        ${p.impact.map(i => `
+          <div class="impact-card">
+            <div class="impact-val">${i.val}</div>
+            <div class="impact-lbl">${i.lbl}</div>
+          </div>
+        `).join('')}
       </div>
     </div>
-    <div class="cs-tools">${p.tools.map(t => `<span class="chip">${t}</span>`).join('')}</div>
+
+    <div class="cs-tools">
+      ${p.tools.map(t => `<span class="chip">${t}</span>`).join('')}
+    </div>
   `;
+
   modalBg.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
