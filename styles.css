@@ -692,6 +692,26 @@ footer {
 
 .cs-tools { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 20px; }
 
+.cs-hero-img{
+  width:100%;
+  border-radius:18px;
+  overflow:hidden;
+  margin-bottom:24px;
+  border:1px solid var(--border);
+  background:var(--surface);
+}
+
+.cs-hero-img img{
+  width:100%;
+  display:block;
+  object-fit:cover;
+  transition:transform .4s ease;
+}
+
+.cs-hero-img:hover img{
+  transform:scale(1.02);
+}
+
 /* Mobile hamburger */
 .nav-hamburger {
   display: none;
